@@ -3,9 +3,15 @@
 @import "neat/neat";
 @import "last-year";
 
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
 $blue-dark: #03725D;
 $blue-light: #12A686;
 $green: #00967e;
+$grey-light: #e0e0e0;
 
 // Typography
 	
@@ -17,10 +23,11 @@ $green: #00967e;
 
 	header {
 		background-image: url("/img/bg.png");
-		background-size: 100vw 36vw;
+		background-size: cover;
 		background-repeat: no-repeat;
-		min-height: 20vw;
+		background-position: center center;
 		padding: 3em;
+		font-size: 1.25em;
 		img {
 			height: 3em;
 			display: block;
@@ -34,6 +41,7 @@ $green: #00967e;
 		}
 		h2 {
 			font-weight: normal;
+			margin-bottom: 0;
 		}
 		p {
 			display: flex;
@@ -55,33 +63,38 @@ $green: #00967e;
 	
 	h2.time {
 		text-align: center;
-		padding: 1em;
+		padding: 2em 1em;
 		text-transform: uppercase;
-		color: $blue-light;
+		color: $blue-dark;
+		background: $grey-light;
 		font-size: 2em;
-	}
-
-	h3.time {
-		text-align: left;
-		padding: 1em;
-		color: $blue-light;
-		font-size: 1em;
+		margin: 0;
 	}
 
 // Stream
 
 	.stream {
 		@include outer-container;
+		margin-top: 3em;
+		margin-bottom: 3em;
+		h3.time {
+			text-align: center;
+			color: $blue-light;
+			text-transform: uppercase;
+			font-size: 1.5em;
+		}
 		.video {
 			@include span-columns(8);
 			iframe {
 				@include span-columns(8 of 8);
-				height: 350px;
+				height: 355px;
 			}
 		}
 		.sidebar {
 			@include span-columns(4);
 			@include omega;
+			border: 1px solid $grey-light;
+			padding-right: 1px;
 			iframe {
 				height: 350px !important;
 			}
@@ -170,10 +183,12 @@ $green: #00967e;
 	}
 
 	.speakers {
+		margin-top: 3em;
 		ul {
 			margin-top: 0;
 			h2 {
 				color: $blue-light;
+				margin-top: -5px;
 			}
 		}
 	}
@@ -189,7 +204,7 @@ $green: #00967e;
 	
 	.ru {
 		display: block;
-		color: #754698;
+		color: #5F4273;
 		text-decoration: none;
 		margin-bottom: 2rem;
 		h3 {
@@ -203,32 +218,4 @@ $green: #00967e;
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "res";

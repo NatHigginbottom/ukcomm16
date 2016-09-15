@@ -376,9 +376,11 @@ html {
 
 .speakers {
   padding-top: 0;
-  max-width: 960px;
+  max-width: 72rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em; }
   .speakers::after {
     clear: both;
     content: "";
@@ -429,9 +431,11 @@ html {
 
 .talks {
   padding-top: 0;
-  max-width: 960px;
+  max-width: 72rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em; }
   .talks::after {
     clear: both;
     content: "";
@@ -480,10 +484,11 @@ html {
 
 header {
   background-image: url("/img/bg.png");
-  background-size: 100vw 36vw;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 20vw;
-  padding: 3em; }
+  background-position: center center;
+  padding: 3em;
+  font-size: 1.25em; }
   header img {
     height: 3em;
     display: block;
@@ -494,7 +499,8 @@ header {
     text-align: center;
     text-transform: uppercase; }
   header h2 {
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 0; }
   header p {
     display: flex;
     flex-direction: row;
@@ -510,25 +516,30 @@ header {
 
 h2.time, .stream .tweet-intent {
   text-align: center;
-  padding: 1em;
+  padding: 2em 1em;
   text-transform: uppercase;
-  color: #12A686;
-  font-size: 2em; }
-
-h3.time {
-  text-align: left;
-  padding: 1em;
-  color: #12A686;
-  font-size: 1em; }
+  color: #03725D;
+  background: #e0e0e0;
+  font-size: 2em;
+  margin: 0; }
 
 .stream {
-  max-width: 960px;
+  max-width: 72rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em; }
   .stream::after {
     clear: both;
     content: "";
     display: table; }
+  .stream h3.time {
+    text-align: center;
+    color: #12A686;
+    text-transform: uppercase;
+    font-size: 1.5em; }
   .stream .video {
     float: left;
     display: block;
@@ -541,7 +552,7 @@ h3.time {
       display: block;
       margin-right: 3.57866%;
       width: 100%;
-      height: 350px; }
+      height: 355px; }
       .stream .video iframe:last-child {
         margin-right: 0; }
   .stream .sidebar {
@@ -549,7 +560,9 @@ h3.time {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    margin-right: 0; }
+    margin-right: 0;
+    border: 1px solid #e0e0e0;
+    padding-right: 1px; }
     .stream .sidebar:last-child {
       margin-right: 0; }
     .stream .sidebar iframe {
@@ -574,9 +587,11 @@ h3.time {
     text-transform: uppercase;
     margin: 0; }
   .register form {
-    max-width: 960px;
+    max-width: 72rem;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em; }
     .register form::after {
       clear: both;
       content: "";
@@ -599,9 +614,11 @@ h3.time {
         color: #00967e; }
 
 .about {
-  max-width: 960px;
+  max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-bottom: 2rem; }
   .about::after {
     clear: both;
@@ -631,10 +648,13 @@ h3.time {
 .talks ul {
   padding-left: 0; }
 
-.speakers ul {
-  margin-top: 0; }
-  .speakers ul h2 {
-    color: #12A686; }
+.speakers {
+  margin-top: 3em; }
+  .speakers ul {
+    margin-top: 0; }
+    .speakers ul h2 {
+      color: #12A686;
+      margin-top: -5px; }
 
 .talks .name {
   text-transform: uppercase;
@@ -642,7 +662,7 @@ h3.time {
 
 .ru {
   display: block;
-  color: #754698;
+  color: #5F4273;
   text-decoration: none;
   margin-bottom: 2rem; }
   .ru h3 {
@@ -652,5 +672,97 @@ h3.time {
     display: block;
     margin: 0 auto;
     height: 4rem; }
+
+@media screen and (max-width: 1000px) {
+  .register {
+    padding: 2em 1em; }
+    .register form {
+      padding: 0; }
+      .register form input {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-bottom: 2.35765%;
+        font-size: 0.75rem; }
+        .register form input:last-child {
+          margin-right: 0; }
+        .register form input:nth-child(2n) {
+          margin-right: 0; }
+        .register form input:nth-child(2n+1) {
+          clear: left; }
+        .register form input[type="submit"] {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-bottom: 0; }
+          .register form input[type="submit"]:last-child {
+            margin-right: 0; } }
+@media screen and (max-width: 800px) {
+  header {
+    font-size: 0.8em; }
+
+  h2.time, .stream .tweet-intent,
+  .stream h3.time {
+    font-size: 1.25em; }
+
+  .stream .video,
+  .stream .sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .stream .video:last-child,
+    .stream .sidebar:last-child {
+      margin-right: 0; }
+  .stream .video iframe {
+    height: 63vw; }
+  .stream .sidebar iframe {
+    width: 100% !important;
+    height: 63vw !important; }
+
+  .register form input {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .register form input:last-child {
+      margin-right: 0; }
+
+  .speakers ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .speakers ul li:nth-child(2n) {
+      margin-right: 2.35765%; }
+    .speakers ul li:nth-child(2n+1) {
+      clear: none; }
+    .speakers ul li:last-child {
+      margin-right: 0; }
+
+  .talks ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0; }
+    .talks ul:last-child {
+      margin-right: 0; }
+    .talks ul li .time,
+    .talks ul li .information {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%;
+      text-align: center; }
+      .talks ul li .time:last-child,
+      .talks ul li .information:last-child {
+        margin-right: 0; }
+    .talks ul li .time {
+      margin-bottom: 0.5em;
+      font-size: 0.8em; } }
 
 /*# sourceMappingURL=style.css.map */

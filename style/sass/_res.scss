@@ -1,0 +1,76 @@
+$breakpoint-large: 1000px;
+$breakpoint: 800px;
+
+@media screen and (max-width: $breakpoint-large) {
+	.register {
+		padding: 2em 1em;
+		form {
+			padding: 0;
+			input {
+				@include span-columns(6 of 12);
+				@include omega(2n);
+				margin-bottom: 2.35765%;
+				font-size: 0.75rem;
+				&[type="submit"] {
+					@include span-columns(12);
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint) {
+	header {
+		font-size: 0.8em;
+	}
+	h2.time,
+	.stream h3.time {
+		font-size: 1.25em;
+	}
+
+	.stream {
+		.video, 
+		.sidebar {
+			@include span-columns(12);
+		}
+		.video iframe {
+			height: 63vw;
+		}
+		.sidebar iframe {
+			width: 100% !important;
+			height: 63vw !important;
+		}
+	}
+
+	.register form input {
+		@include span-columns(12);
+	}
+
+	.speakers ul li {
+		@include omega-reset(2n);
+		@include span-columns(12);
+	}
+
+	.talks {
+		ul {
+			@include span-columns(12 of 12);
+			@include shift(0);
+			margin-top: 0;
+			li {
+				.information {
+					
+				}
+				.time,
+				.information {
+					@include span-columns(8 of 8);
+					text-align: center;
+				}
+				.time {
+					margin-bottom: 0.5em;
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}
