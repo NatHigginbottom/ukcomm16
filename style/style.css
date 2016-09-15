@@ -578,7 +578,8 @@ h2.time, .stream .tweet-intent {
 
 .register {
   background: #03725D;
-  padding: 2em; }
+  padding: 2em;
+  text-align: center; }
   .register h2 {
     color: white;
     display: block;
@@ -586,32 +587,14 @@ h2.time, .stream .tweet-intent {
     padding-bottom: 1em;
     text-transform: uppercase;
     margin: 0; }
-  .register form {
-    max-width: 72rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1em;
-    padding-right: 1em; }
-    .register form::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .register form input {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 18.11388%;
-      padding: .5em;
-      border: 2px solid transparent;
-      outline: 0; }
-      .register form input:last-child {
-        margin-right: 0; }
-      .register form input:focus, .register form input:active {
-        outline: 0;
-        border-color: #12A686; }
-      .register form input[type="submit"] {
-        background: white;
-        color: #00967e; }
+  .register a {
+    padding: 1em;
+    background: white;
+    display: inline-block;
+    color: #03725D;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 .about {
   max-width: 72rem;

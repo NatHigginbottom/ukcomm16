@@ -115,8 +115,9 @@ $grey-light: #e0e0e0;
 // Register 
 
 	.register {
-		background: #03725D;
+		background: $blue-dark;
 		padding: 2em;
+		text-align: center;
 		h2 {
 			color: white;
 			display: block;
@@ -125,23 +126,14 @@ $grey-light: #e0e0e0;
 			text-transform: uppercase;
 			margin: 0;
 		}
-		form {
-			@include outer-container;
-			input {
-				@include span-columns(2.4);
-				padding: .5em;
-				border: 2px solid transparent;
-				outline: 0;
-				&:focus,
-				&:active {
-					outline: 0;
-					border-color: $blue-light;
-				}
-				&[type="submit"] {
-					background: white;
-					color: $green;
-				}
-			}
+		a {
+			padding: 1em;
+			background: white;
+			display: inline-block;
+			color: $blue-dark;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
 		}
 	}
 
