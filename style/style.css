@@ -514,7 +514,7 @@ header {
     text-transform: uppercase;
     text-decoration: none; }
 
-h2.time, .stream .tweet-intent {
+h2.time, .stream .tweet-intent a {
   text-align: center;
   padding: 2em 1em;
   text-transform: uppercase;
@@ -544,7 +544,8 @@ h2.time, .stream .tweet-intent {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%; }
+    width: 65.88078%;
+    margin-bottom: 2em; }
     .stream .video:last-child {
       margin-right: 0; }
     .stream .video iframe {
@@ -562,19 +563,22 @@ h2.time, .stream .tweet-intent {
     width: 31.76157%;
     margin-right: 0;
     border: 1px solid #e0e0e0;
-    padding-right: 1px; }
+    padding-right: 1px;
+    margin-bottom: 2em; }
     .stream .sidebar:last-child {
       margin-right: 0; }
     .stream .sidebar iframe {
       height: 350px !important; }
-  .stream .tweet-intent {
+  .stream .tweet-intent a {
     width: 100%;
     margin-bottom: 0;
-    overflow: auto; }
-    .stream .tweet-intent a {
-      color: #12A686;
-      text-decoration: none;
-      padding: 1em; }
+    overflow: auto;
+    padding: 1em;
+    width: 100%;
+    display: block;
+    color: #12A686;
+    text-decoration: none;
+    padding: 1em; }
 
 .register {
   background: #03725D;
@@ -686,7 +690,7 @@ h2.time, .stream .tweet-intent {
   header {
     font-size: 0.8em; }
 
-  h2.time, .stream .tweet-intent,
+  h2.time, .stream .tweet-intent a,
   .stream h3.time {
     font-size: 1.25em; }
 

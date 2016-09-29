@@ -85,6 +85,7 @@ $grey-light: #e0e0e0;
 		}
 		.video {
 			@include span-columns(8);
+			margin-bottom: 2em;
 			iframe {
 				@include span-columns(8 of 8);
 				height: 355px;
@@ -95,16 +96,20 @@ $grey-light: #e0e0e0;
 			@include omega;
 			border: 1px solid $grey-light;
 			padding-right: 1px;
+			margin-bottom: 2em;
 			iframe {
 				height: 350px !important;
 			}
 		}
 		.tweet-intent {
-			@extend h2.time;
-			@include fill-parent;
-			margin-bottom: 0;
-			overflow: auto;
 			a {
+				@extend h2.time;
+				@include fill-parent;
+				margin-bottom: 0;
+				overflow: auto;
+				padding: 1em;
+				width: 100%;
+				display: block;
 				color: $blue-light;
 				text-decoration: none;
 				padding: 1em;
