@@ -553,7 +553,7 @@ h2.time, .stream .tweet-intent a {
       display: block;
       margin-right: 3.57866%;
       width: 100%;
-      height: 355px; }
+      height: 440px; }
       .stream .video iframe:last-child {
         margin-right: 0; }
   .stream .sidebar {
@@ -568,7 +568,7 @@ h2.time, .stream .tweet-intent a {
     .stream .sidebar:last-child {
       margin-right: 0; }
     .stream .sidebar iframe {
-      height: 350px !important; }
+      height: 440px !important; }
   .stream .tweet-intent a {
     width: 100%;
     margin-bottom: 0;

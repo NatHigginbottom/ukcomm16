@@ -88,7 +88,7 @@ $grey-light: #e0e0e0;
 			margin-bottom: 2em;
 			iframe {
 				@include span-columns(8 of 8);
-				height: 355px;
+				height: 440px;
 			}
 		}
 		.sidebar {
@@ -98,7 +98,7 @@ $grey-light: #e0e0e0;
 			padding-right: 1px;
 			margin-bottom: 2em;
 			iframe {
-				height: 350px !important;
+				height: 440px !important;
 			}
 		}
 		.tweet-intent {
